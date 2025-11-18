@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Star } from 'lucide-react';
 import bannerpic2 from '../assets/images/bannerpic2.png';
 import nailIcon from '../assets/images/nail-icon.png';
 import nailIcon1 from '../assets/images/nail-icon-1.png';
@@ -51,9 +52,9 @@ const Home = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <div className="max-w-lg">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-light mb-4 md:mb-6 tracking-wide">
-                  Welcome to<br />
-                  <span className="text-brown">Studio April</span>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-light mb-4 md:mb-6 tracking-wide uppercase">
+                  WELCOME TO<br />
+                  <span className="text-brown italic normal-case" style={{ fontFamily: 'Georgia, serif' }}>Studio April</span>
                 </h1>
                 <p className="text-charcoal/80 leading-relaxed mb-4 md:mb-6 text-sm md:text-base">
                   Experience premium nail artistry with a focus on hygiene and health.
@@ -67,9 +68,9 @@ const Home = () => {
                 </p>
                 <button
                   onClick={() => window.open('https://www.fresha.com/book-now/studio-april-f1fyri2u/alloffer?share=true&pId=2529794', '_blank')}
-                  className="mt-6 md:mt-8 px-6 md:px-8 py-2.5 md:py-3 bg-charcoal text-cream rounded-full hover:bg-brown transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm md:text-base"
+                  className="mt-6 md:mt-8 px-6 md:px-8 py-2.5 md:py-3 bg-charcoal text-cream rounded-full hover:bg-brown transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm md:text-base uppercase tracking-wider"
                 >
-                  Book Your Appointment
+                  BOOK YOUR APPOINTMENT
                 </button>
               </div>
             </motion.div>
@@ -93,13 +94,13 @@ const Home = () => {
 
       {/* Brown Band Section */}
       <motion.section
-        className="text-cream py-6 md:py-8"
-        style={{ backgroundColor: '#8f5d46' }}
+        className="py-6 md:py-8"
+        style={{ backgroundColor: '#FCDAC2' }}
         {...fadeInUp}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center">
-            <p className="text-cream italic text-sm md:text-base lg:text-lg font-light">
+            <p className="text-charcoal italic text-sm md:text-base lg:text-lg font-light">
               Premium nail care with a focus on hygiene, health, and artistry
             </p>
           </div>
@@ -126,7 +127,7 @@ const Home = () => {
               <div className="flex justify-center mb-4">
                 <img src={nailIcon} alt="Nail Care" className="w-12 h-12 md:w-16 md:h-16 object-contain transition-transform duration-300 hover:scale-110" />
               </div>
-              <h3 className="text-base md:text-lg font-light mb-2 text-brown">Nail Care</h3>
+              <h3 className="text-base md:text-lg font-light mb-2 text-brown uppercase tracking-wide">Nail Care</h3>
               <p className="text-xs md:text-sm text-charcoal/70 leading-relaxed">
                 Expert manicures & pedicures with premium products and meticulous attention to detail.
               </p>
@@ -141,7 +142,7 @@ const Home = () => {
               <div className="flex justify-center mb-4">
                 <img src={nailIcon1} alt="Nail Art" className="w-12 h-12 md:w-16 md:h-16 object-contain transition-transform duration-300 hover:scale-110" />
               </div>
-              <h3 className="text-base md:text-lg font-light mb-2 text-brown">Nail Art</h3>
+              <h3 className="text-base md:text-lg font-light mb-2 text-brown uppercase tracking-wide">Nail Art</h3>
               <p className="text-xs md:text-sm text-charcoal/70 leading-relaxed">
                 Custom designs and creative nail art to express your unique style beautifully.
               </p>
@@ -156,7 +157,7 @@ const Home = () => {
               <div className="flex justify-center mb-4">
                 <img src={nailIcon2} alt="Tint & Trends" className="w-12 h-12 md:w-16 md:h-16 object-contain transition-transform duration-300 hover:scale-110" />
               </div>
-              <h3 className="text-base md:text-lg font-light mb-2 text-brown">Tint & Trends</h3>
+              <h3 className="text-base md:text-lg font-light mb-2 text-brown uppercase tracking-wide">Tint & Trends</h3>
               <p className="text-xs md:text-sm text-charcoal/70 leading-relaxed">
                 Lash lifts and brow lamination for effortless beauty that lasts.
               </p>
@@ -204,7 +205,7 @@ const Home = () => {
               {...fadeInUp}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="text-2xl md:text-3xl font-light mb-4 md:mb-6 text-brown">OUR STORY</h2>
+              <h2 className="text-2xl md:text-3xl font-light italic mb-4 md:mb-6 text-brown" style={{ fontFamily: 'Georgia, serif' }}>Our Story</h2>
               <p className="text-charcoal/80 leading-relaxed mb-3 md:mb-4 text-sm md:text-base">
                 Studio April began with a simple vision: to create a beauty space where hygiene,
                 artistry, and client care come together seamlessly. Founded by April, a passionate
@@ -228,13 +229,13 @@ const Home = () => {
 
       {/* Mix & Match Polishes Section */}
       <motion.section
-        className="text-cream py-12 md:py-16"
-        style={{ backgroundColor: '#8f5d46' }}
+        className="py-12 md:py-16"
+        style={{ backgroundColor: '#FCDAC2' }}
         {...fadeInUp}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-center mb-8 md:mb-12">
-            MIX & MATCH POLISHES
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-light italic text-center mb-8 md:mb-12" style={{ fontFamily: 'Georgia, serif' }}>
+            Mix & Match Polishes
           </h2>
           <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8"
@@ -256,8 +257,8 @@ const Home = () => {
                   className="h-32 md:h-48 w-auto object-contain transition-transform duration-300 hover:scale-110"
                 />
               </div>
-              <h3 className="text-base md:text-lg font-light mb-1">Base Coat</h3>
-              <p className="text-cream/70 text-xs">Film protector / No.01 oz</p>
+              <h3 className="text-base md:text-lg font-light mb-1 uppercase tracking-wide text-charcoal">Base Coat</h3>
+              <p className="text-charcoal/70 text-xs">Film protector / No.01 oz</p>
             </motion.div>
 
             {/* Gel Polish */}
@@ -273,8 +274,8 @@ const Home = () => {
                   className="h-32 md:h-48 w-auto object-contain transition-transform duration-300 hover:scale-110"
                 />
               </div>
-              <h3 className="text-base md:text-lg font-light mb-1">Gel Polish</h3>
-              <p className="text-cream/70 text-xs">Sunset Pink / No.01 oz</p>
+              <h3 className="text-base md:text-lg font-light mb-1 uppercase tracking-wide text-charcoal">Gel Polish</h3>
+              <p className="text-charcoal/70 text-xs">Sunset Pink / No.01 oz</p>
             </motion.div>
 
             {/* Top Coat */}
@@ -290,8 +291,8 @@ const Home = () => {
                   className="h-32 md:h-48 w-auto object-contain transition-transform duration-300 hover:scale-110"
                 />
               </div>
-              <h3 className="text-base md:text-lg font-light mb-1">Top Coat</h3>
-              <p className="text-cream/70 text-xs">Summer Rouge / No.01 oz</p>
+              <h3 className="text-base md:text-lg font-light mb-1 uppercase tracking-wide text-charcoal">Top Coat</h3>
+              <p className="text-charcoal/70 text-xs">Summer Rouge / No.01 oz</p>
             </motion.div>
 
             {/* Matte Polish */}
@@ -307,8 +308,8 @@ const Home = () => {
                   className="h-32 md:h-48 w-auto object-contain transition-transform duration-300 hover:scale-110"
                 />
               </div>
-              <h3 className="text-base md:text-lg font-light mb-1">Matte Polish</h3>
-              <p className="text-cream/70 text-xs">Blue Pottery / No.01 oz</p>
+              <h3 className="text-base md:text-lg font-light mb-1 uppercase tracking-wide text-charcoal">Matte Polish</h3>
+              <p className="text-charcoal/70 text-xs">Blue Pottery / No.01 oz</p>
             </motion.div>
           </motion.div>
         </div>
@@ -322,8 +323,8 @@ const Home = () => {
             <motion.div
               {...fadeInUp}
             >
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-light mb-6 md:mb-8 text-brown">
-                TREATMENTS & PRICES
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-light italic mb-6 md:mb-8 text-brown" style={{ fontFamily: 'Georgia, serif' }}>
+                Treatments & Prices
               </h2>
 
               {/* Service Items */}
@@ -437,6 +438,109 @@ const Home = () => {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="relative bg-cream py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <motion.div className="text-center mb-12" {...fadeInUp}>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light italic mb-2" style={{ fontFamily: 'Georgia, serif' }}>
+              What Our Clients Say
+            </h2>
+            <p className="text-charcoal/60 text-sm md:text-base">Real reviews from our valued clients</p>
+          </motion.div>
+
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8"
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            {/* Review 1 - J'aime Dawson */}
+            <motion.div
+              className="bg-white rounded-lg shadow-md p-6 md:p-8 hover:shadow-xl transition-shadow duration-300"
+              variants={staggerItem}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-brown/20 flex items-center justify-center">
+                    <span className="text-brown font-medium text-lg">J</span>
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-charcoal">J'aime Dawson</h3>
+                    <p className="text-xs text-charcoal/60">2 days ago</p>
+                  </div>
+                </div>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={16} fill="#8f5d46" color="#8f5d46" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-charcoal/80 leading-relaxed text-sm md:text-base mb-3">
+                The best pedicure I have ever experienced. I was on the verge of falling asleep! The experience was incredible, I'm never going anywhere else.
+              </p>
+              <p className="text-charcoal/80 leading-relaxed text-sm md:text-base mb-3">
+                I was greeted into a private studio with a variety of snacks and refreshments to enjoy during the appointment. To top off the experience I was set up with netflix in hand, a plush warm blanket whilst lying back on one of the most lavish salon chairs... it felt like a bed.
+              </p>
+              <p className="text-charcoal/80 leading-relaxed text-sm md:text-base mb-2">
+                Also my pedicure looks and feels wonderful
+              </p>
+              <p className="text-charcoal/70 text-sm">😍 I'm obsessed 😍</p>
+              <div className="mt-4 pt-4 border-t border-charcoal/10">
+                <p className="text-xs text-charcoal/60">Service: Pedicure</p>
+              </div>
+            </motion.div>
+
+            {/* Review 2 - Suttida Gift */}
+            <motion.div
+              className="bg-white rounded-lg shadow-md p-6 md:p-8 hover:shadow-xl transition-shadow duration-300"
+              variants={staggerItem}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-brown/20 flex items-center justify-center">
+                    <span className="text-brown font-medium text-lg">S</span>
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-charcoal">Suttida Gift</h3>
+                    <p className="text-xs text-charcoal/60">4 days ago</p>
+                  </div>
+                </div>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={16} fill="#8f5d46" color="#8f5d46" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-charcoal/80 leading-relaxed text-sm md:text-base mb-4">
+                I've got this beautiful nails and my eyebrows done from Kim. She's very precise and perfectionist for her work. And it was lovely and comfy space there. Highly recommended!!!!
+              </p>
+              <div className="mt-4 pt-4 border-t border-charcoal/10">
+                <p className="text-xs text-charcoal/60 mb-1">Services: Eyebrow shaping, Waxing, Brow lamination, Manicure</p>
+                <p className="text-xs text-charcoal/60">Stylist: Kim</p>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          {/* Google Reviews Link */}
+          <motion.div className="text-center mt-10" {...fadeInUp}>
+            <a
+              href="https://www.google.com/search?sca_esv=d8140a1b87a5a1ad&sxsrf=AE3TifPvEjzVe8HRkPYK4118PO8Kvn-mTA:1763508889329&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E6dPnPZ2qWOOQ6_chNPr93TRoAkIXAdgtkDKFg-S6eRJFY2dnuZzRCnUCx3skjeG7MSvaNTByA97rnqNboQJBW4zyXIcLzxRDLPlYz6PU4G5loHsMg%3D%3D&q=Studio+April+B%C3%A0i+%C4%91%C3%A1nh+gi%C3%A1&sa=X&ved=2ahUKEwjkoaDH7vyQAxV_oGMGHfZPAIUQ0bkNegQINBAE&biw=1548&bih=968&dpr=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-brown hover:text-brown/80 transition-colors duration-200 text-sm md:text-base"
+            >
+              <span>View all reviews on Google</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </motion.div>
         </div>
       </section>
 
