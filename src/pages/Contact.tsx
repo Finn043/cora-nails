@@ -96,20 +96,6 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-
-              {/* Newsletter Subscription */}
-              <div className="pt-6 border-t border-charcoal/10">
-                <div className="flex gap-2">
-                  <input
-                    type="email"
-                    placeholder="Enter email address"
-                    className="flex-1 px-4 py-2 border border-charcoal/20 rounded-full focus:outline-none focus:border-brown transition-colors text-sm"
-                  />
-                  <button className="px-6 py-2 bg-brown text-cream rounded-full hover:bg-brown/90 transition-all duration-300 text-sm uppercase tracking-wide">
-                    Subscribe
-                  </button>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
@@ -144,7 +130,7 @@ const Contact = () => {
           <motion.div className="text-center mt-12" {...fadeInUp}>
             <p className="text-charcoal/60 mb-4">Ready to book your appointment?</p>
             <button
-              onClick={() => window.open('https://www.fresha.com/book-now/studio-april-f1fyri2u/alloffer?share=true&pId=2529794', '_blank')}
+              onClick={() => window.open('https://www.fresha.com/a/studio-april-melbourne-68-mollison-street-pm249xrk/booking', '_blank')}
               className="px-12 py-4 bg-charcoal text-cream rounded-full hover:bg-brown transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-lg font-light tracking-wider uppercase"
             >
               BOOK NOW

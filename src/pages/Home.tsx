@@ -67,7 +67,7 @@ const Home = () => {
                   you leave feeling beautiful and confident.
                 </p>
                 <button
-                  onClick={() => window.open('https://www.fresha.com/book-now/studio-april-f1fyri2u/alloffer?share=true&pId=2529794', '_blank')}
+                  onClick={() => window.open('https://www.fresha.com/a/studio-april-melbourne-68-mollison-street-pm249xrk/booking', '_blank')}
                   className="mt-6 md:mt-8 px-6 md:px-8 py-2.5 md:py-3 bg-charcoal text-cream rounded-full hover:bg-brown transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm md:text-base uppercase tracking-wider"
                 >
                   BOOK YOUR APPOINTMENT
@@ -403,7 +403,7 @@ const Home = () => {
 
               {/* Explore Button */}
               <button
-                onClick={() => window.open('https://www.fresha.com/book-now/studio-april-f1fyri2u/alloffer?share=true&pId=2529794', '_blank')}
+                onClick={() => window.open('https://www.fresha.com/a/studio-april-melbourne-68-mollison-street-pm249xrk/booking', '_blank')}
                 className="px-6 md:px-8 py-2.5 md:py-3 bg-brown text-cream rounded-full hover:bg-brown/90 transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5 text-sm md:text-base"
               >
                 EXPLORE

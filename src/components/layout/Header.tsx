@@ -6,7 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleBooking = () => {
-    window.open('https://www.fresha.com/book-now/studio-april-f1fyri2u/alloffer?share=true&pId=2529794', '_blank');
+    window.open('https://www.fresha.com/a/studio-april-melbourne-68-mollison-street-pm249xrk/booking', '_blank');
   };
 
   return (
