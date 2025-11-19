@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#F1E9D6',
+        cream: '#FCF8EF',
         brown: '#8f5d46',
         charcoal: '#2C2C2C',
       },
