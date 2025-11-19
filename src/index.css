@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-cream text-charcoal;
-  }
-
   html {
     scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-charcoal;
+    background-color: #F1E9D6;
+  }
+
+  #root {
+    background-color: #F1E9D6;
   }
 }
 
