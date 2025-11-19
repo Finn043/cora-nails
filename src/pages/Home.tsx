@@ -13,16 +13,11 @@ import nailPolish2 from '../assets/images/nail-polish-2.png';
 import nailPolish3 from '../assets/images/nail-polish-3.png';
 import nailPolish4 from '../assets/images/nail-polish-4.png';
 import nailpic5 from '../assets/images/nailpic5.png';
-import nailpic3 from '../assets/images/nailpic3.png';
-import nailpic4 from '../assets/images/nailpic4.png';
-import nailpic6 from '../assets/images/nailpic6.png';
-import instagramIcon from '../assets/images/004-instagram.png';
-
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-100px" },
-  transition: { duration: 0.6, ease: "easeOut" }
+  transition: { duration: 0.6, ease: "easeOut" as const }
 };
 
 const staggerContainer = {
@@ -34,7 +29,7 @@ const staggerContainer = {
 const staggerItem = {
   initial: { opacity: 0, y: 40 },
   whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.5, ease: "easeOut" }
+  transition: { duration: 0.5, ease: "easeOut" as const }
 };
 
 const Home = () => {
