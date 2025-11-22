@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
-import bannerpic2 from '../assets/images/bannerpic2.png';
+import aboutme3 from '../assets/images/aboutme3.png';
 import nailIcon from '../assets/images/nail-icon.png';
 import nailIcon1 from '../assets/images/nail-icon-1.png';
 import nailIcon2 from '../assets/images/nail-icon-2.png';
@@ -74,7 +74,7 @@ const Home = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               <img
-                src={bannerpic2}
+                src={aboutme3}
                 alt="Studio April"
                 className="w-full h-full object-cover"
               />
