@@ -59,10 +59,10 @@ const Contact = () => {
                 <div>
                   <h3 className="text-lg font-medium mb-2 uppercase tracking-wide">PHONE</h3>
                   <a
-                    href="tel:+61478410069"
+                    href="tel:+61420949009"
                     className="text-charcoal/70 hover:text-brown transition-colors duration-200"
                   >
-                    +61 (0) 478 410 069
+                    +61 (0) 420 949 009
                   </a>
                 </div>
               </div>

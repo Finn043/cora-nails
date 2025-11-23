@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
-import bannerpic2 from '../assets/images/bannerpic2.png';
+import aboutme3 from '../assets/images/aboutme3.png';
 import nailIcon from '../assets/images/nail-icon.png';
 import nailIcon1 from '../assets/images/nail-icon-1.png';
 import nailIcon2 from '../assets/images/nail-icon-2.png';
@@ -8,10 +8,6 @@ import nailpic from '../assets/images/nailpic.png';
 import nailpic2 from '../assets/images/nailpic2.png';
 import glitter from '../assets/images/glitter.png';
 import glitter2 from '../assets/images/glitter2.png';
-import nailPolish1 from '../assets/images/nail-polish-1.png';
-import nailPolish2 from '../assets/images/nail-polish-2.png';
-import nailPolish3 from '../assets/images/nail-polish-3.png';
-import nailPolish4 from '../assets/images/nail-polish-4.png';
 import nailpic5 from '../assets/images/nailpic5.png';
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -78,7 +74,7 @@ const Home = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               <img
-                src={bannerpic2}
+                src={aboutme3}
                 alt="Studio April"
                 className="w-full h-full object-cover"
               />
@@ -203,7 +199,7 @@ const Home = () => {
               <h2 className="text-2xl md:text-3xl font-light italic mb-4 md:mb-6 text-brown" style={{ fontFamily: 'Georgia, serif' }}>Our Story</h2>
               <p className="text-charcoal/80 leading-relaxed mb-3 md:mb-4 text-sm md:text-base">
                 Studio April began with a simple vision: to create a beauty space where hygiene,
-                artistry, and client care come together seamlessly. Founded by April, a passionate
+                artistry, and client care come together seamlessly. Founded by Kim, a passionate
                 nail technician and beauty specialist, our studio is built on years of experience
                 and a commitment to excellence.
               </p>
@@ -221,94 +217,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Mix & Match Polishes Section */}
-      <motion.section
-        className="py-12 md:py-16"
-        style={{ backgroundColor: '#FCDAC2' }}
-        {...fadeInUp}
-      >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-light italic text-center mb-8 md:mb-12" style={{ fontFamily: 'Georgia, serif' }}>
-            Mix & Match Polishes
-          </h2>
-          <motion.div
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8"
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="whileInView"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            {/* Base Coat */}
-            <motion.div
-              className="text-center"
-              variants={staggerItem}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              <div className="flex justify-center mb-3 md:mb-4">
-                <img
-                  src={nailPolish1}
-                  alt="Base Coat"
-                  className="h-32 md:h-48 w-auto object-contain transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-              <h3 className="text-base md:text-lg font-light mb-1 uppercase tracking-wide text-charcoal">Base Coat</h3>
-              <p className="text-charcoal/70 text-xs">Film protector / No.01 oz</p>
-            </motion.div>
-
-            {/* Gel Polish */}
-            <motion.div
-              className="text-center"
-              variants={staggerItem}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <div className="flex justify-center mb-3 md:mb-4">
-                <img
-                  src={nailPolish2}
-                  alt="Gel Polish"
-                  className="h-32 md:h-48 w-auto object-contain transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-              <h3 className="text-base md:text-lg font-light mb-1 uppercase tracking-wide text-charcoal">Gel Polish</h3>
-              <p className="text-charcoal/70 text-xs">Sunset Pink / No.01 oz</p>
-            </motion.div>
-
-            {/* Top Coat */}
-            <motion.div
-              className="text-center"
-              variants={staggerItem}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <div className="flex justify-center mb-3 md:mb-4">
-                <img
-                  src={nailPolish3}
-                  alt="Top Coat"
-                  className="h-32 md:h-48 w-auto object-contain transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-              <h3 className="text-base md:text-lg font-light mb-1 uppercase tracking-wide text-charcoal">Top Coat</h3>
-              <p className="text-charcoal/70 text-xs">Summer Rouge / No.01 oz</p>
-            </motion.div>
-
-            {/* Matte Polish */}
-            <motion.div
-              className="text-center"
-              variants={staggerItem}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <div className="flex justify-center mb-3 md:mb-4">
-                <img
-                  src={nailPolish4}
-                  alt="Matte Polish"
-                  className="h-32 md:h-48 w-auto object-contain transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-              <h3 className="text-base md:text-lg font-light mb-1 uppercase tracking-wide text-charcoal">Matte Polish</h3>
-              <p className="text-charcoal/70 text-xs">Blue Pottery / No.01 oz</p>
-            </motion.div>
-          </motion.div>
-        </div>
-      </motion.section>
 
       {/* Treatments & Prices Section */}
       <section className="relative bg-cream py-12 md:py-16">

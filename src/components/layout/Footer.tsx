@@ -34,7 +34,7 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-medium mb-3 md:mb-4 tracking-wide text-charcoal">Contact</h3>
             <div className="space-y-2 text-xs md:text-sm text-charcoal/80">
-              <p>Phone: <a href="tel:+61478410069" className="hover:text-brown transition-colors duration-200">+61 (0) 478 410 069</a></p>
+              <p>Phone: <a href="tel:+61420949009" className="hover:text-brown transition-colors duration-200">+61 (0) 420 949 009</a></p>
               <p>Email: <a href="mailto:studioapril004@gmail.com" className="hover:text-brown transition-colors duration-200 break-words">studioapril004@gmail.com</a></p>
               <p className="leading-relaxed">
                 Address: Level 1, 68 Mollison St,<br />
