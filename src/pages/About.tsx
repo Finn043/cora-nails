@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import aboutme from '../assets/images/aboutme.jpg';
 import aboutme2 from '../assets/images/aboutme2.jpg';
-import nailpic from '../assets/images/nailpic.png';
+import nailpic from '../assets/images/nailpic8.png';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -113,7 +113,7 @@ const About = () => {
               <img
                 src={nailpic}
                 alt="Nail Art Work"
-                className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
+                className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105 rounded-2xl"
               />
             </motion.div>
           </div>

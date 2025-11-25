@@ -4,11 +4,11 @@ import aboutme3 from '../assets/images/aboutme3.png';
 import nailIcon from '../assets/images/nail-icon.png';
 import nailIcon1 from '../assets/images/nail-icon-1.png';
 import nailIcon2 from '../assets/images/nail-icon-2.png';
-import nailpic from '../assets/images/nailpic.png';
-import nailpic2 from '../assets/images/nailpic2.png';
+import nailpic from '../assets/images/nailpic8.png';
+import nailpic2 from '../assets/images/nailpic10.png';
 import glitter from '../assets/images/glitter.png';
 import glitter2 from '../assets/images/glitter2.png';
-import nailpic5 from '../assets/images/nailpic5.png';
+import nailpic5 from '../assets/images/nailpic9.png';
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   whileInView: { opacity: 1, y: 0 },
@@ -178,14 +178,14 @@ const Home = () => {
               <img
                 src={nailpic}
                 alt="Studio April Nails"
-                className="w-full h-auto object-contain shadow-lg relative z-0 transition-transform duration-300 hover:scale-105"
+                className="w-full h-auto object-contain shadow-lg relative z-0 transition-transform duration-300 hover:scale-105 rounded-2xl"
               />
 
               {/* nailpic2 overlapping at bottom right */}
               <img
                 src={nailpic2}
                 alt="Studio April Services"
-                className="absolute -bottom-12 -right-12 md:-bottom-16 md:-right-16 w-1/2 h-auto object-contain z-20 transition-transform duration-300 hover:scale-105"
+                className="absolute -bottom-12 -right-12 md:-bottom-16 md:-right-16 w-1/2 h-auto object-contain z-20 transition-transform duration-300 hover:scale-105 rounded-t-full"
                 style={{ filter: 'drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.15))' }}
               />
             </motion.div>
