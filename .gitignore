@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 .netlify
+src/assets/images2/menu.jpeg
 *.local
 
 # Editor directories and files

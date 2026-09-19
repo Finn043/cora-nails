@@ -35,7 +35,7 @@ const serviceGroups = [
     { name: 'Extra Length Form', price: '$10–$30', note: 'Price varies by length.' },
   ]},
   { title: 'Manicure', items: [
-    { name: 'Classic Manicure', price: '$35', time: '30 min', note: 'Nail shaping, cuticle care, buff, massage and polish.' },
+    { name: 'Classic Manicure', price: '$35', note: 'Nail shaping, cuticle care, buff, massage and polish.' },
     { name: 'Cora Deluxe Manicure', price: '$65', time: '60 min', note: 'Manicure, scrub, hydrating mask, warm towel, massage and shellac.' },
     { name: 'Gel Manicure', price: '$55', time: '50 min', note: 'Detailed preparation, cuticle care, gel colour and massage.' },
     { name: 'Shellac', price: '$45', time: '35 min', note: 'Cut, shape and polish.' },
