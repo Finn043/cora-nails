@@ -81,7 +81,7 @@ components:
 
 Cora Nails presents nail care as a calm, contemporary atelier rather than a predictable pink salon. Warm greige paper, ink-black type, tactile photography, soft organic arches, and precise hairlines make the experience feel minimalist, refined, and human.
 
-The system pairs editorial scale with unhurried spacing. Italiana gives promises, service names, and location details a crafted voice; DM Sans keeps navigation and practical information clear. Real salon and nail photography carries the proof, while motion remains slow, sparse, and material.
+The system pairs editorial scale with unhurried spacing. The supplied Cora logo is the persistent brand signature; Italiana gives promises, service-group headings, service names, and location details a crafted voice, while DM Sans keeps navigation and practical information clear. Real salon and nail photography carries the proof, while motion remains slow, sparse, and material.
 
 **Key Characteristics:**
 
@@ -89,6 +89,7 @@ The system pairs editorial scale with unhurried spacing. Italiana gives promises
 - Editorial serif scale balanced by compact utilitarian labels.
 - Tall photography, rounded arches, and asymmetric compositions.
 - Hairline structure and generous negative space instead of decoration.
+- The supplied logo anchors header and footer without a substitute text treatment.
 - Restrained reveal, underline, lift, and image-scale interactions.
 
 ## Colors
@@ -142,7 +143,7 @@ The palette resembles warm paper, stone, lacquer, and charcoal; contrast comes f
 
 Desktop compositions use broad editorial grids inside fluid gutters of roughly 6–8vw, with primary content capped near 1400px. Sections breathe vertically, typically using the section spacing token, while hero and feature areas use split layouts with intentionally unequal columns.
 
-At 900px, navigation collapses, major grids simplify, and gutters tighten to 5vw. At 600px, compositions become single-column or compact two-column galleries; service descriptions yield to names, price, and duration. Mobile keeps the asymmetric image overlaps and arches rather than flattening the design into generic stacked cards.
+The service menu is a dense editorial index: seven named groups are stacked with generous separation, while each group's entries form a compact hairline-separated list. At 900px, navigation collapses, major grids simplify, and gutters tighten to 5vw. At 600px, compositions become single-column or compact two-column galleries; service descriptions yield to names, price, and optional duration. Mobile keeps the asymmetric image overlaps and arches rather than flattening the design into generic stacked cards.
 
 **The Breathing Room Rule.** Preserve generous section rhythm and readable copy measures; do not fill empty space with ornamental UI.
 
@@ -177,11 +178,11 @@ The form language alternates between precise hairlines, softly rounded rectangul
 
 ### Navigation
 
-The fixed desktop header uses a three-column arrangement: wordmark, centered uppercase links, and a right-aligned outlined status action. Links reveal a fine underline on hover. Below 900px, a plain icon button opens a full-width cream menu with large serif links; the motion clips downward rather than sliding laterally.
+The fixed desktop header uses a three-column arrangement: the supplied Cora logo at a restrained 128px width, centered uppercase links, and a right-aligned outlined status action. The same logo returns at 180px in the dark footer with a white inversion treatment. Links reveal a fine underline on hover. Below 900px, a plain icon button opens a full-width cream menu with large serif links; the motion clips downward rather than sliding laterally.
 
-### Service Rows
+### Service Menu
 
-Service rows are separated by hairlines and pair a serif title with restrained supporting copy and right-aligned price metadata. Desktop hover shifts the row slightly and adds a faint light wash; mobile removes that movement and hides descriptions to protect scanability.
+Seven service groups are stacked with a 5rem rhythm. Each group opens with a large serif category heading, then dense hairline-separated rows pair a serif service name and restrained description with right-aligned price and optional duration metadata. Desktop hover shifts the row slightly and adds a faint light wash; mobile removes that movement, tightens the row gap, and hides descriptions to protect scanability.
 
 ### Image Frames
 
@@ -198,6 +199,7 @@ The address is a large serif text link framed only by top and bottom ink hairlin
 - **Do** let real nail and salon photography carry color, texture, and proof.
 - **Do** maintain strong ink-on-cream contrast, visible focus, mobile touch targets, and reduced-motion behavior.
 - **Do** use generous whitespace, asymmetric editorial grids, and hairlines to establish hierarchy.
+- **Do** use the supplied Cora logo asset in header and footer brand positions.
 - **Do** keep booking language explicitly unavailable until a verified booking route exists.
 
 ### Don't:
@@ -206,4 +208,5 @@ The address is a large serif text link framed only by top and bottom ink hairlin
 - **Don't** add card shadows or rounded boxes around every piece of content.
 - **Don't** use arches indiscriminately; reserve them for photographic and stamp-like moments.
 - **Don't** turn every heading into italic taupe or dilute the two-typeface hierarchy.
+- **Don't** recreate the Cora logo with live text or substitute typography.
 - **Don't** present unverified contact, opening-hour, social, or booking details as fact.

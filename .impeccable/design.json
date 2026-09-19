@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-19T07:43:45Z",
+  "generatedAt": "2026-09-19T10:40:02Z",
   "title": "Design System: Cora Nails",
   "extensions": {
     "colorMeta": {
@@ -63,11 +63,11 @@
       "css": ".ds-nav{display:flex;gap:2.4rem;font:400 .76rem 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase}.ds-nav a{position:relative;color:var(--ink,#26231f);text-decoration:none}.ds-nav a::after{content:'';position:absolute;left:0;right:100%;bottom:-.4rem;height:1px;background:currentColor;transition:right .35s ease}.ds-nav a:hover::after,.ds-nav a:focus-visible::after{right:0}.ds-nav a:focus-visible{outline:2px solid var(--ink,#26231f);outline-offset:5px}"
     },
     {
-      "name": "Service Row",
+      "name": "Grouped Service Menu",
       "kind": "custom",
-      "description": "A hairline-separated service summary with editorial title and right-aligned metadata.",
-      "html": "<article class=\"ds-service\"><div><h3>Deluxe Gel Manicure</h3><p>A complete gel manicure with exfoliation, hydration and a warm towel finish.</p></div><div class=\"ds-service-meta\"><strong>$80</strong><span>60 MIN</span></div></article>",
-      "css": ".ds-service{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:start;padding:2rem 0;border-top:1px solid var(--line,rgba(38,35,31,.18));border-bottom:1px solid var(--line,rgba(38,35,31,.18));color:var(--ink,#26231f);transition:transform .3s,background .3s}.ds-service:hover{transform:translateX(.5rem);background:rgba(255,255,255,.25)}.ds-service h3{margin:0 0 .55rem;font:400 1.6rem 'Italiana',serif}.ds-service p{max-width:43rem;margin:0;color:var(--muted,#625c54);font:400 .9rem/1.6 'DM Sans',sans-serif}.ds-service-meta{min-width:90px;text-align:right;display:grid;gap:.3rem}.ds-service-meta strong{font:400 1.35rem 'Italiana',serif}.ds-service-meta span{color:var(--muted,#625c54);font:400 .7rem 'DM Sans',sans-serif;letter-spacing:.12em}"
+      "description": "A titled service category followed by dense hairline-separated rows with right-aligned price metadata.",
+      "html": "<section class=\"ds-service-group\"><h3>MANICURE</h3><div class=\"ds-service-list\"><article class=\"ds-service\"><div><h4>Gel Manicure</h4><p>Detailed preparation, cuticle care, gel colour and massage.</p></div><div class=\"ds-service-meta\"><strong>$55</strong><span>50 MIN</span></div></article><article class=\"ds-service\"><div><h4>Shellac</h4><p>Cut, shape and polish.</p></div><div class=\"ds-service-meta\"><strong>$45</strong><span>35 MIN</span></div></article></div></section>",
+      "css": ".ds-service-group{color:var(--ink,#26231f)}.ds-service-group>h3{margin:0 0 1.4rem;font:400 clamp(2rem,3.4vw,3.5rem) 'Italiana',serif}.ds-service-list{border-top:1px solid var(--line,rgba(38,35,31,.18))}.ds-service{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:start;padding:2rem 0;border-bottom:1px solid var(--line,rgba(38,35,31,.18));transition:transform .3s,background .3s}.ds-service:hover{transform:translateX(.5rem);background:rgba(255,255,255,.25)}.ds-service h4{margin:0 0 .55rem;font:400 1.6rem 'Italiana',serif}.ds-service p{max-width:43rem;margin:0;color:var(--muted,#625c54);font:400 .9rem/1.6 'DM Sans',sans-serif}.ds-service-meta{min-width:90px;text-align:right;display:grid;gap:.3rem}.ds-service-meta strong{font:400 1.35rem 'Italiana',serif}.ds-service-meta span{color:var(--muted,#625c54);font:400 .7rem 'DM Sans',sans-serif;letter-spacing:.12em}"
     },
     {
       "name": "Address Card",
@@ -86,12 +86,13 @@
   ],
   "narrative": {
     "northStar": "The Quiet Lacquer Atelier",
-    "overview": "Cora Nails presents nail care as a calm, contemporary atelier rather than a predictable pink salon. Warm greige paper, ink-black type, tactile photography, soft organic arches, and precise hairlines make the experience feel minimalist, refined, and human.\n\nThe system pairs editorial scale with unhurried spacing. Italiana gives promises, service names, and location details a crafted voice; DM Sans keeps navigation and practical information clear. Real salon and nail photography carries the proof, while motion remains slow, sparse, and material.",
+    "overview": "Cora Nails presents nail care as a calm, contemporary atelier rather than a predictable pink salon. Warm greige paper, ink-black type, tactile photography, soft organic arches, and precise hairlines make the experience feel minimalist, refined, and human.\n\nThe system pairs editorial scale with unhurried spacing. The supplied Cora logo is the persistent brand signature; Italiana gives promises, service-group headings, service names, and location details a crafted voice, while DM Sans keeps navigation and practical information clear. Real salon and nail photography carries the proof, while motion remains slow, sparse, and material.",
     "keyCharacteristics": [
       "Warm, low-saturation neutrals with ink-led contrast.",
       "Editorial serif scale balanced by compact utilitarian labels.",
       "Tall photography, rounded arches, and asymmetric compositions.",
       "Hairline structure and generous negative space instead of decoration.",
+      "The supplied logo anchors header and footer without a substitute text treatment.",
       "Restrained reveal, underline, lift, and image-scale interactions."
     ],
     "rules": [
@@ -107,6 +108,7 @@
       "Do let real nail and salon photography carry color, texture, and proof.",
       "Do maintain strong ink-on-cream contrast, visible focus, mobile touch targets, and reduced-motion behavior.",
       "Do use generous whitespace, asymmetric editorial grids, and hairlines to establish hierarchy.",
+      "Do use the supplied Cora logo asset in header and footer brand positions.",
       "Do keep booking language explicitly unavailable until a verified booking route exists."
     ],
     "donts": [
@@ -114,6 +116,7 @@
       "Don't add card shadows or rounded boxes around every piece of content.",
       "Don't use arches indiscriminately; reserve them for photographic and stamp-like moments.",
       "Don't turn every heading into italic taupe or dilute the two-typeface hierarchy.",
+      "Don't recreate the Cora logo with live text or substitute typography.",
       "Don't present unverified contact, opening-hour, social, or booking details as fact."
     ]
   }

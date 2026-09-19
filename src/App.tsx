@@ -7,18 +7,58 @@ import nail2 from './assets/images2/nailpic2.jpeg'
 import nail3 from './assets/images2/nailpic3.jpeg'
 import nail4 from './assets/images2/nailpic4.jpeg'
 import nail5 from './assets/images2/nailpic5.jpeg'
+import logo from './assets/images2/logo-transparent.webp'
 
 const mapsUrl = 'https://share.google/MZ7t2PZCGkwwA43b4'
 
-const services = [
-  { name: 'Deluxe Naked Manicure', price: '$60', time: '45 min', note: 'Precise cuticle care, strengthening finish, exfoliation and a warm towel ritual.' },
-  { name: 'Express Gel Manicure', price: '$65', time: '45 min', note: 'Detailed nail preparation with gel colour, hydrating lotion and cuticle oil.' },
-  { name: 'Deluxe Gel Manicure', price: '$80', time: '60 min', note: 'A complete gel manicure with exfoliation, hydration and a warm towel finish.' },
-  { name: 'Builder Gel / BIAB', price: '$85', time: '75 min', note: 'Strength and structure for natural nails, finished with your chosen gel colour.' },
-  { name: 'BIAB Rebalance', price: '$95', time: '90 min', note: 'A considered refresh with detailed e-file cuticle care and colour.' },
-  { name: 'Extensions', price: '$130', time: '120 min', note: 'Added length with tips or full-cover extensions, cuticle care and gel colour.' },
-  { name: 'Deluxe Naked Pedicure', price: '$75', time: '45 min', note: 'Cuticle and callus care, exfoliation, hydration and warm towels.' },
-  { name: 'Deluxe Gel Pedicure', price: '$95', time: '60 min', note: 'Detailed nail and callus care with gel colour and a restorative finish.' },
+const serviceGroups = [
+  { title: 'SNS / Dip Powder', items: [
+    { name: 'SNS French Signature', price: '$70', time: '60 min', note: 'Overlay, French finish and removal.' },
+    { name: 'SNS Luxe Overlay', price: '$70', time: '60 min', note: 'Overlay, removal and manicure.' },
+    { name: 'SNS Classic', price: '$65', time: '50 min', note: 'Basic full set.' },
+    { name: 'SNS Overlay', price: '$55', time: '50 min', note: 'Dip powder overlay.' },
+    { name: 'Extra Length Form', price: '$10–$30', note: 'Price varies by length.' },
+  ]},
+  { title: 'Builder Gel / BIAB', items: [
+    { name: 'Builder Gel Overlay · Natural Nails', price: '$80', time: '50 min', note: 'Builder gel over natural nails for added strength and structure.' },
+    { name: 'Builder Gel Full Set', price: '$90', time: '60 min', note: 'Full set of builder gel with extensions.' },
+    { name: 'Builder Gel Infill · Tips', price: '$75', time: '55 min', note: 'Builder gel infill for existing tip extensions.' },
+    { name: 'Builder Gel Infill · Natural Nails', price: '$65', time: '45 min', note: 'Builder gel infill on natural nails.' },
+    { name: 'Gel-X Extensions · Full Set', price: 'From $70', time: '40 min', note: 'Full set of Gel-X extensions. Infill is not available.' },
+    { name: 'Extra Length Form', price: '$10–$30', note: 'Price varies by length.' },
+  ]},
+  { title: 'Acrylic', items: [
+    { name: 'Full Set Acrylic + Shellac', price: '$70', time: '55 min', note: 'Acrylic extensions finished with one solid shellac colour.' },
+    { name: 'Classic Acrylic Full Set', price: '$65', time: '50 min', note: 'Full set finished with regular polish.' },
+    { name: 'Acrylic Infill + Shellac', price: '$60', time: '50 min', note: 'Infill, reshaping and shellac colour for existing acrylic nails.' },
+    { name: 'Acrylic Infill + Polish', price: '$55', time: '45 min', note: 'Infill, reshaping and regular polish for existing acrylic nails.' },
+    { name: 'Extra Length Form', price: '$10–$30', note: 'Price varies by length.' },
+  ]},
+  { title: 'Manicure', items: [
+    { name: 'Classic Manicure', price: '$35', time: '30 min', note: 'Nail shaping, cuticle care, buff, massage and polish.' },
+    { name: 'Cora Deluxe Manicure', price: '$65', time: '60 min', note: 'Manicure, scrub, hydrating mask, warm towel, massage and shellac.' },
+    { name: 'Gel Manicure', price: '$55', time: '50 min', note: 'Detailed preparation, cuticle care, gel colour and massage.' },
+    { name: 'Shellac', price: '$45', time: '35 min', note: 'Cut, shape and polish.' },
+  ]},
+  { title: 'Pedicure', items: [
+    { name: 'Classic Pedicure', price: '$55', time: '40 min', note: 'Soak, colour removal, steam therapy, nail and cuticle care, heel and callus care, scrub, massage, warm towels and classic polish.' },
+    { name: 'Cora Deluxe Pedicure', price: '$90', time: '70 min', note: 'Soak, steam therapy, detailed care, rose scrub, foot mask, warm towels, candle massage and shellac.' },
+    { name: 'Gel Pedicure', price: '$65', time: '45 min', note: 'Soak, steam therapy, detailed nail, cuticle, heel and callus care, scrub, warm towel, massage and gel colour.' },
+    { name: 'Shellac', price: '$40', time: '20 min', note: 'Cut, shape and polish.' },
+  ]},
+  { title: 'Cora Duos', items: [
+    { name: 'The Refresh', price: '$80', time: '60 min', note: 'Manicure and pedicure with regular polish.' },
+    { name: 'The Shellac Duo', price: '$110', time: '75 min', note: 'Manicure and pedicure with shellac.' },
+    { name: 'Cora Deluxe · Mani + Pedi', price: '$140', time: '100 min', note: 'The complete Cora manicure and pedicure ritual.' },
+  ]},
+  { title: 'Design & Removal', items: [
+    { name: 'French', price: 'From $15', note: 'A timeless French finish.' },
+    { name: 'Ombré', price: 'From $20', note: 'A soft blended colour finish.' },
+    { name: 'Cat Eye', price: 'From $15', note: 'Magnetic, light-catching gel detail.' },
+    { name: 'Chrome', price: 'From $15', note: 'A high-shine metallic finish.' },
+    { name: 'Custom Nail Art', price: 'From $40', note: 'Your idea, your style.' },
+    { name: 'Removal', price: '$25', time: '30 min', note: 'Safe removal of existing product.' },
+  ]},
 ]
 
 const gallery = [
@@ -43,7 +83,7 @@ function App() {
   return (
     <div className="site-shell">
       <header className="header">
-        <a className="brand" href="#top" onClick={closeMenu} aria-label="Cora Nails home"><span>Cora</span> Nails</a>
+        <a className="brand" href="#top" onClick={closeMenu} aria-label="Cora Nails home"><img src={logo} alt="Cora Nails" /></a>
         <nav className="desktop-nav" aria-label="Main navigation">
           <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
         </nav>
@@ -81,10 +121,10 @@ function App() {
 
         <section className="services" id="services">
           <motion.div className="services-title" {...reveal}><h2>Nail rituals,<br /><em>beautifully considered.</em></h2><p>Our focused menu is designed around healthy-looking nails, lasting finishes and detail-led artistry.</p></motion.div>
-          <div className="service-list">
-            {services.map((service) => <article className="service-row" key={service.name}><div><h3>{service.name}</h3><p>{service.note}</p></div><div className="service-meta"><strong>{service.price}</strong><span>{service.time}</span></div></article>)}
+          <div className="service-menu">
+            {serviceGroups.map((group) => <section className="service-group" key={group.title}><h3>{group.title}</h3><div className="service-list">{group.items.map((service) => <article className="service-row" key={`${group.title}-${service.name}`}><div><h4>{service.name}</h4><p>{service.note}</p></div><div className="service-meta"><strong>{service.price}</strong>{service.time && <span>{service.time}</span>}</div></article>)}</div></section>)}
           </div>
-          <p className="price-note">Indicative pricing carried over from the current menu — please confirm before launch. Nail art and removal can be added to your service.</p>
+          <p className="price-note">Please allow extra time for removal, detailed nail art and additional length.</p>
         </section>
 
         <section className="gallery" id="gallery">
@@ -103,7 +143,7 @@ function App() {
         </section>
       </main>
 
-      <footer><a className="brand footer-brand" href="#top"><span>Cora</span> Nails</a><p>Nails Lounge · Rosebud, Victoria</p><a href={mapsUrl} target="_blank" rel="noreferrer">Open in Google Maps <ArrowUpRight size={15} /></a><p>© {new Date().getFullYear()} Cora Nails</p></footer>
+      <footer><a className="brand footer-brand" href="#top"><img src={logo} alt="Cora Nails" /></a><p>Nails Lounge · Rosebud, Victoria</p><a href={mapsUrl} target="_blank" rel="noreferrer">Open in Google Maps <ArrowUpRight size={15} /></a><p>© {new Date().getFullYear()} Cora Nails</p></footer>
     </div>
   )
 }
