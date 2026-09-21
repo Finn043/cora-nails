@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ArrowUpRight, MapPin, Menu, X } from 'lucide-react'
-import interior from './assets/images2/nail_interior_cora.jpeg'
+import { ArrowUpRight, Mail, MapPin, Menu, Phone, X } from 'lucide-react'
+import interior from './assets/images2/nail_interior_cora.webp'
 import nail1 from './assets/images2/nailpic1.jpeg'
 import nail2 from './assets/images2/nailpic2.jpeg'
-import nail3 from './assets/images2/nailpic3.jpeg'
+import nail3 from './assets/images2/nailpic3.webp'
 import nail4 from './assets/images2/nailpic4.jpeg'
 import nail5 from './assets/images2/nailpic5.jpeg'
 import logo from './assets/images2/logo-transparent.webp'
@@ -62,11 +62,11 @@ const serviceGroups = [
 ]
 
 const gallery = [
-  [nail1, 'Olive and cream almond nail art with gold detail'],
-  [nail2, 'Neutral almond manicure with fine gold accents'],
-  [nail3, 'Soft blush heart nail art'],
-  [nail4, 'Warm taupe shimmer manicure'],
-  [nail5, 'Chocolate and blush modern nail design'],
+  [nail1, 'Soft pink almond manicure'],
+  [nail2, 'White French almond manicure'],
+  [nail4, 'Burgundy French manicure with heart details'],
+  [nail5, 'Pearlescent nude almond manicure'],
+  [nail3, 'White and nude stiletto nails with gold line art'],
 ]
 
 const reveal = {
@@ -116,7 +116,7 @@ function App() {
           <motion.div className="section-heading" {...reveal}><h2>Care in every<br /><em>small detail.</em></h2></motion.div>
           <motion.div className="about-copy" {...reveal}><p>Cora Nails is a dedicated nails lounge in Rosebud, created for polished results and a genuinely relaxing pause in your day.</p><p>From natural nail care and BIAB to gel colour, extensions and custom art, every appointment is approached with patience, precision and an eye for balance.</p></motion.div>
           <motion.figure className="interior-frame" {...reveal}><img src={interior} alt="Warm neutral interior of Cora Nails in Rosebud" /><figcaption>Our Rosebud lounge</figcaption></motion.figure>
-          <motion.figure className="detail-frame" {...reveal}><img src={nail4} alt="Warm taupe shimmer manicure" /></motion.figure>
+          <motion.figure className="detail-frame" {...reveal}><img src={nail5} alt="Pearlescent nude almond manicure" /></motion.figure>
         </section>
 
         <section className="services" id="services">
@@ -134,16 +134,20 @@ function App() {
 
         <section className="booking" id="booking">
           <motion.div {...reveal}><h2>Your next nail moment<br />is almost ready.</h2><p>Online booking is currently in development. In the meantime, visit us in Rosebud or check back soon.</p><button className="button button-disabled" disabled>Online booking · coming soon</button></motion.div>
-          <motion.img src={nail3} alt="Blush heart nail art" {...reveal} />
+          <motion.img src={nail4} alt="Burgundy French manicure with heart details" {...reveal} />
         </section>
 
         <section className="contact" id="contact">
           <motion.div {...reveal}><h2>Come by.<br /><em>Stay awhile.</em></h2><p>We are located in the heart of Rosebud on the Mornington Peninsula.</p></motion.div>
-          <motion.a className="address-card" href={mapsUrl} target="_blank" rel="noreferrer" {...reveal}><MapPin /><span>919 Point Nepean Road<br />Rosebud, VIC</span><ArrowUpRight /></motion.a>
+          <motion.div className="contact-actions" {...reveal}>
+            <a className="address-card" href={mapsUrl} target="_blank" rel="noreferrer"><MapPin /><span>919 Point Nepean Road<br />Rosebud, VIC</span><ArrowUpRight /></a>
+            <a className="contact-row" href="tel:+61359100033"><Phone /><span>0359 100 033</span><ArrowUpRight /></a>
+            <a className="contact-row" href="mailto:anhpham1611@icloud.com"><Mail /><span>anhpham1611@icloud.com</span><ArrowUpRight /></a>
+          </motion.div>
         </section>
       </main>
 
-      <footer><a className="brand footer-brand" href="#top"><img src={logo} alt="Cora Nails" /></a><p>Nails Lounge · Rosebud, Victoria</p><a href={mapsUrl} target="_blank" rel="noreferrer">Open in Google Maps <ArrowUpRight size={15} /></a><p>© {new Date().getFullYear()} Cora Nails</p></footer>
+      <footer><a className="brand footer-brand" href="#top"><img src={logo} alt="Cora Nails" /></a><p>Nails Lounge · Rosebud, Victoria</p><a href="tel:+61359100033">0359 100 033</a><a href="mailto:anhpham1611@icloud.com">anhpham1611@icloud.com</a><a href={mapsUrl} target="_blank" rel="noreferrer">Open in Google Maps <ArrowUpRight size={15} /></a><p>© {new Date().getFullYear()} Cora Nails</p></footer>
     </div>
   )
 }

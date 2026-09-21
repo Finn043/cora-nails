@@ -81,7 +81,7 @@ components:
 
 Cora Nails presents nail care as a calm, contemporary atelier rather than a predictable pink salon. Warm greige paper, ink-black type, tactile photography, soft organic arches, and precise hairlines make the experience feel minimalist, refined, and human.
 
-The system pairs editorial scale with unhurried spacing. The supplied Cora logo is the persistent brand signature; Italiana gives promises, service-group headings, service names, and location details a crafted voice, while DM Sans keeps navigation and practical information clear. Real salon and nail photography carries the proof, while motion remains slow, sparse, and material.
+The system pairs editorial scale with unhurried spacing. The supplied gold Cora logo is the persistent brand signature; Italiana gives promises, service-group headings, service names, and location details a crafted voice, while DM Sans keeps navigation and practical information clear. Real salon and nail photography carries the proof, while motion remains slow, sparse, and material.
 
 **Key Characteristics:**
 
@@ -89,7 +89,7 @@ The system pairs editorial scale with unhurried spacing. The supplied Cora logo 
 - Editorial serif scale balanced by compact utilitarian labels.
 - Tall photography, rounded arches, and asymmetric compositions.
 - Hairline structure and generous negative space instead of decoration.
-- The supplied logo anchors header and footer without a substitute text treatment.
+- The supplied gold logo anchors header and footer without recoloring or substitute text.
 - Restrained reveal, underline, lift, and image-scale interactions.
 
 ## Colors
@@ -178,7 +178,7 @@ The form language alternates between precise hairlines, softly rounded rectangul
 
 ### Navigation
 
-The fixed desktop header uses a three-column arrangement: the supplied Cora logo at a restrained 128px width, centered uppercase links, and a right-aligned outlined status action. The same logo returns at 180px in the dark footer with a white inversion treatment. Links reveal a fine underline on hover. Below 900px, a plain icon button opens a full-width cream menu with large serif links; the motion clips downward rather than sliding laterally.
+The fixed desktop header uses a three-column arrangement: the supplied gold Cora logo at a restrained 128px width, centered uppercase links, and a right-aligned outlined status action. The same gold logo returns unchanged at 180px in the dark footer. Links reveal a fine underline on hover. Below 900px, a plain icon button opens a full-width cream menu with large serif links; the motion clips downward rather than sliding laterally.
 
 ### Service Menu
 
@@ -188,9 +188,9 @@ Seven service groups are stacked with a 5rem rhythm. Each group opens with a lar
 
 Photography is full-bleed within clipped frames, always using `object-fit: cover`. Gallery images use quiet rounded rectangles and a very subtle hover scale; hero, detail, and booking imagery use distinctive arches to carry the visual identity.
 
-### Address Card
+### Contact Actions
 
-The address is a large serif text link framed only by top and bottom ink hairlines. A location icon opens the reading order and an arrow signals the external Maps destination; hover shifts the complete row as one unit.
+Contact details form one hairline-led action stack. The address is the large serif lead row framed by decisive ink rules; phone and email follow as compact 64px-minimum rows separated by lighter hairlines. Every row uses a leading purpose icon, the contact value, and a trailing arrow, then shifts as one unit on hover. On narrow screens, long email text may wrap anywhere rather than overflow.
 
 ## Do's and Don'ts
 
@@ -199,14 +199,15 @@ The address is a large serif text link framed only by top and bottom ink hairlin
 - **Do** let real nail and salon photography carry color, texture, and proof.
 - **Do** maintain strong ink-on-cream contrast, visible focus, mobile touch targets, and reduced-motion behavior.
 - **Do** use generous whitespace, asymmetric editorial grids, and hairlines to establish hierarchy.
-- **Do** use the supplied Cora logo asset in header and footer brand positions.
+- **Do** use the supplied gold Cora logo asset unchanged in header and footer brand positions.
+- **Do** present the verified phone and email as direct `tel:` and `mailto:` actions.
 - **Do** keep booking language explicitly unavailable until a verified booking route exists.
 
 ### Don't:
 
-- **Don't** introduce default salon pinks, glossy gradients, ornamental florals, or faux-luxury gold effects.
+- **Don't** introduce default salon pinks, glossy gradients, ornamental florals, or gold effects beyond the supplied logo artwork.
 - **Don't** add card shadows or rounded boxes around every piece of content.
 - **Don't** use arches indiscriminately; reserve them for photographic and stamp-like moments.
 - **Don't** turn every heading into italic taupe or dilute the two-typeface hierarchy.
-- **Don't** recreate the Cora logo with live text or substitute typography.
-- **Don't** present unverified contact, opening-hour, social, or booking details as fact.
+- **Don't** recolor, invert, or recreate the Cora logo with live text or substitute typography.
+- **Don't** present unverified opening-hour, social, or booking details as fact.

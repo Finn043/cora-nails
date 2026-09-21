@@ -29,7 +29,9 @@ Visitors primarily browse on mobile, review nail work and services, then use the
 - Address: 919 Point Nepean Road, Rosebud, VIC.
 - Google Maps: https://share.google/MZ7t2PZCGkwwA43b4
 - Booking is explicitly marked as coming soon and must not link to the former business.
-- Phone, email, opening hours, and social accounts are unconfirmed placeholders and must not be presented as verified facts.
+- Phone: 0359 100 033.
+- Email: anhpham1611@icloud.com.
+- Opening hours and social accounts are unconfirmed and must not be presented as verified facts.
 - The service menu and pricing supplied on 2026-09-19 are current product facts.
 
 ## Brand Commitments
