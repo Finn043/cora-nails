@@ -32,7 +32,7 @@ Visitors primarily browse on mobile, review nail work and services, then use the
 - Phone: 0359 100 033.
 - Email: anhpham1611@icloud.com.
 - Opening hours and social accounts are unconfirmed and must not be presented as verified facts.
-- The service menu and pricing supplied on 2026-09-19 are current product facts.
+- `pricelist.md` is the current source for the service menu and pricing, updated on 2026-09-22. Do not use `menu.jpeg` for pricing.
 
 ## Brand Commitments
 
