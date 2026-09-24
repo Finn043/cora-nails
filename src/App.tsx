@@ -11,58 +11,58 @@ import logo from './assets/images2/logo-transparent.webp'
 
 const mapsUrl = 'https://share.google/MZ7t2PZCGkwwA43b4'
 
-const serviceGroups = [
+const serviceGroups: { title: string; items: { name: string; price: string; time?: string; note?: string }[] }[] = [
   { title: 'Cora Duos', items: [
-    { name: 'The Refresh', price: '$80', time: '60 min', note: 'Essential classic pairing for clean, revitalized hands and feet. Includes Classic Manicure and Classic Pedicure with regular polish.' },
-    { name: 'The Shellac Duo', price: '$110', time: '75 min', note: 'Long-lasting shine and zero dry-time for both hands and feet. Includes Manicure and Pedicure with high-gloss Shellac gel polish.' },
-    { name: 'Cora Deluxe', price: '$140', time: '100 min', note: 'The ultimate head-to-toe pampering ritual combining deep exfoliation, hydration and soothing massage. Includes Cora Deluxe Manicure and Cora Deluxe Pedicure.' },
-    { name: 'Cora Builder Pedicure', price: '$135', time: '90 min', note: 'Long-lasting toe care reinforced with builder gel overlay for superior durability and shine. Includes Pedicure Shellac and builder overlay on toenails.' },
+    { name: 'The Refresh', price: '$80', time: '60 min', note: 'Mani + Pedi with regular polish.' },
+    { name: 'The Shellac Duo', price: '$110', time: '75 min', note: 'Mani + Pedi with shellac.' },
+    { name: 'Cora Deluxe', price: '$140', time: '100 min', note: 'Cora Deluxe Manicure + Cora Deluxe Pedicure.' },
+    { name: 'Cora Builder Pedicure', price: '$135', time: '90 min', note: 'Pedicure Shellac + Builder overlay.' },
   ]},
   { title: 'Builder Gel / BIAB', items: [
-    { name: 'Builder Gel Overlay · Natural Nails', price: '$80', time: '50 min', note: 'Premium builder gel applied over natural nails to enhance strength, prevent breakage and promote healthy nail growth.' },
-    { name: 'Builder Gel Full Set', price: '$90', time: '60 min', note: 'Complete extension set sculpted with builder gel to add both desired length and lasting strength.' },
-    { name: 'Builder Gel Infill · Tips', price: '$75', time: '55 min', note: 'Maintenance and rebalancing for existing tip extensions with builder gel.' },
-    { name: 'Builder Gel Infill · Natural Nails', price: '$65', time: '45 min', note: 'Regular upkeep and infill over natural nails to maintain apex balance and structure.' },
-    { name: 'Extra Length / Custom Form', price: '$10–$30', note: 'Optional add-on; price varies by length.' },
+    { name: 'Builder Gel Overlay · Natural Nails', price: '$80', time: '50 min', note: 'Builder gel applied over natural nails for added strength and structure.' },
+    { name: 'Builder Gel Full Set', price: '$90', time: '60 min', note: 'Full set of builder gel with extensions.' },
+    { name: 'Builder Gel Infill · Tips', price: '$75', time: '55 min', note: 'Builder gel infill for existing tip extensions.' },
+    { name: 'Builder Gel Infill · Natural Nails', price: '$65', time: '45 min', note: 'Builder gel infill on natural nails.' },
+    { name: 'Extra Length Form', price: '$10–$30' },
   ]},
   { title: 'SNS / Dip Powder', items: [
-    { name: 'SNS French Signature', price: '$70', time: '60 min', note: 'Elegant and timeless French tips using a high-quality dip powder system. Includes SNS overlay, French tip design and previous colour removal.' },
-    { name: 'SNS Luxe Overlay', price: '$70', time: '60 min', note: 'Complete nail rejuvenation combined with a durable dipping powder coating. Includes full manicure care, SNS overlay and previous colour removal.' },
-    { name: 'SNS Classic', price: '$65', time: '50 min', note: 'Basic full set application using dip powder for resilient, chip-free colour.' },
-    { name: 'SNS Overlay', price: '$55', time: '50 min', note: 'Direct dip powder application over natural nails to provide colour and lightweight reinforcement.' },
-    { name: 'Extra Length / Custom Form', price: '$10–$30', note: 'Optional add-on; price varies by length.' },
+    { name: 'SNS French Signature', price: '$70', time: '60 min', note: 'Overlay + French + removal.' },
+    { name: 'SNS Luxe Overlay', price: '$70', time: '60 min', note: 'Overlay + removal + Manicure.' },
+    { name: 'SNS Classic', price: '$65', time: '50 min', note: 'Basic Full Set.' },
+    { name: 'SNS Overlay', price: '$55', time: '50 min' },
+    { name: 'Extra Length Form', price: '$10–$30' },
   ]},
   { title: 'Acrylic', items: [
-    { name: 'Full Set Acrylic + Shellac', price: '$70', time: '55 min', note: 'Full set of acrylic extensions finished with your choice of long-lasting, glossy shellac colour.' },
-    { name: 'Classic Acrylic Full Set', price: '$65', time: '50 min', note: 'Full set of acrylic extensions finished with standard professional lacquer polish.' },
-    { name: 'Acrylic Infill + Shellac', price: '$60', time: '50 min', note: 'Maintenance for existing acrylics, including growth infill, reshaping, cuticle neatening and fresh shellac colour.' },
-    { name: 'Acrylic Infill + Polish', price: '$55', time: '45 min', note: 'Standard upkeep for existing acrylics, including infill, reshaping and fresh regular polish.' },
-    { name: 'Extra Length / Custom Form', price: '$10–$30', note: 'Optional add-on; price varies by length.' },
+    { name: 'Full Set Acrylic + Shellac', price: '$70', time: '55 min', note: 'Full set acrylic extensions finished with one solid shellac colour.' },
+    { name: 'Classic Acrylic Full Set', price: '$65', time: '50 min', note: 'Regular polish.' },
+    { name: 'Acrylic Infill + Shellac', price: '$60', time: '50 min', note: 'For existing acrylic nails only. Includes infill, reshaping & Shellac colour.' },
+    { name: 'Acrylic Infill + Polish', price: '$55', time: '45 min', note: 'For existing acrylic nails only. Includes infill, reshaping & regular polish.' },
+    { name: 'Extra Length Form', price: '$10–$30' },
   ]},
   { title: 'Gel-X Extensions', items: [
-    { name: 'Gel-X Extensions · Full Set', price: 'From $70', time: '40 min', note: 'Gentle, 100% soft-gel full-cover tip extensions that provide instant length with minimal natural nail damage. No infills are available; a fresh set and soak-off are required.' },
+    { name: 'Gel-X Extensions · Full Set', price: 'From $70', time: '40 min', note: 'Full set of Gel-X extensions. No infill.' },
   ]},
   { title: 'Manicure', items: [
-    { name: 'Classic Manicure', price: '$35', time: '30 min', note: 'Essential routine hand grooming for clean, polished, healthy-looking nails. Includes nail and cuticle care, gentle hand massage, moisturizing lotion and classic polish. Complimentary colour removal included.' },
-    { name: 'Cora Deluxe Manicure', price: '$65', time: '60 min', note: 'An indulgent spa experience focused on deep skin hydration and hand rejuvenation. Includes detailed nail and cuticle care, premium exfoliating scrub, hydrating mask, warm towel compress, tension-relief massage, premium moisturizer and shellac finish. Complimentary colour removal included.' },
-    { name: 'Gel Manicure', price: '$55', time: '45 min', note: 'Detailed precision cuticle preparation finished with durable gel colour that stays shiny for weeks. Includes detailed prep, cuticle treatment, gel colour, hand massage and moisturizer. Complimentary colour removal included.' },
-    { name: 'Shellac Manicure · Cut & Polish', price: '$45', time: '30 min', note: 'A quick nail refresh with high-gloss shellac colour. Includes cutting, nail shaping and shellac gel polish. Complimentary colour removal included.' },
+    { name: 'Classic Manicure', price: '$35', note: 'Nail & Cuticle care · Massage · Moisturiser · Polish. Colour removal included.' },
+    { name: 'Cora Deluxe Manicure', price: '$65', time: '60 min', note: 'Nail & Cuticle Care · Premium Scrub · Hydrating mask · Warm towel · Massage · Premium Moisturiser · Shellac. Colour removal included.' },
+    { name: 'Gel Manicure', price: '$55', time: '45 min', note: 'Detailed prep · Cuticle care · Gel colour · Massage · Moisturiser. Colour removal included.' },
+    { name: 'Shellac Manicure · Cut & Polish', price: '$45', time: '30 min', note: 'Cut · Shape · Polish. Colour removal included.' },
   ]},
   { title: 'Pedicure', items: [
-    { name: 'Classic Pedicure', price: '$55', time: '40 min', note: 'A refreshing foot soak and grooming ritual to soothe tired feet. Includes warm foot soak, nail and cuticle care, heel and callus smoothing, exfoliating scrub, warm towels, steam therapy, foot massage, moisturizer and classic polish. Complimentary colour removal included.' },
-    { name: 'Cora Deluxe Pedicure', price: '$85', time: 'From 60 min', note: 'Our signature sensory foot spa treatment with nourishing warm candle massage and intensive steam therapy. Includes herbal soak, precision nail and cuticle care, heel and callus treatment, premium exfoliating scrub, hydrating mask, steam therapy, warm towels, warm candle oil massage, premium moisturizer and shellac polish. Complimentary colour removal included.' },
-    { name: 'Gel Pedicure', price: '$65', time: '45 min', note: 'A complete foot and nail overhaul paired with smudge-free, instant-dry gel colour. Includes foot soak, nail and cuticle treatment, heel and callus care, body scrub, warm towel, steam therapy, foot massage, moisturizer and gel colour. Complimentary colour removal included.' },
-    { name: 'Shellac Pedicure · Cut & Polish', price: '$40', time: '20 min', note: 'Quick maintenance for fast, beautiful toenails. Includes trimming, filing, shaping and shellac polish. Complimentary colour removal included.' },
+    { name: 'Classic Pedicure', price: '$55', time: '40 min', note: 'Soak · Nail & Cuticle Care · Heel & Callus Care · Scrub · Warm Towels · Steam Therapy · Massage · Moisturiser · Classic Polish. Colour removal included.' },
+    { name: 'Cora Deluxe Pedicure', price: '$85', time: 'From 60 min', note: 'Soak · Nail & Cuticle Care · Heel & Callus Care · Premium Scrub · Hydrating mask · Steam Therapy · Warm Towels · Candle Massage · Premium Moisturiser · Shellac Polish. Colour removal included.' },
+    { name: 'Gel Pedicure', price: '$65', time: '45 min', note: 'Soak · Nail & Cuticle care · Heel & Callus care · Scrub · Warm Towel · Steam Therapy · Massage · Moisturiser · Gel Colour. Colour removal included.' },
+    { name: 'Shellac Pedicure · Cut & Polish', price: '$40', time: '20 min', note: 'Cut · Shape · Polish. Colour removal included.' },
   ]},
   { title: 'Nail Art & Add-ons', items: [
-    { name: 'French Tips', price: 'From $20', note: 'Classic white or modern colourful French smile line accent.' },
-    { name: 'Ombré', price: 'From $25', note: 'A seamless gradient blend between two or more contrasting or complementary shades.' },
-    { name: 'Cat Eye Effect', price: 'From $15', note: 'A velvet metallic magnetic effect creating multidimensional light reflections.' },
-    { name: 'Chrome Finish', price: 'From $15', note: 'High-shine mirror, glazed-donut or holographic pigment powder buffed onto polish.' },
-    { name: 'Custom Nail Art', price: 'From $50', note: 'Bespoke hand-painted artwork, charms, 3D gel sculpting or intricate multi-finger designs — your idea, your style.' },
+    { name: 'French Tips', price: 'From $20' },
+    { name: 'Ombré', price: 'From $25' },
+    { name: 'Cat Eye Effect', price: 'From $15' },
+    { name: 'Chrome Finish', price: 'From $15' },
+    { name: 'Custom Nail Art', price: 'From $50', note: 'Your idea, your style.' },
   ]},
   { title: 'Removal Services', items: [
-    { name: 'Professional Removal', price: '$30', time: '25 min', note: 'Safe, gentle removal of acrylic, SNS dip powder or builder gel without damaging the natural nail plate. Finished with nail conditioning.' },
+    { name: 'Professional Removal', price: '$30', time: '25 min' },
   ]},
 ]
 
@@ -127,7 +127,7 @@ function App() {
         <section className="services" id="services">
           <motion.div className="services-title" {...reveal}><h2>Nail rituals,<br /><em>beautifully considered.</em></h2><p>Our focused menu is designed around healthy-looking nails, lasting finishes and detail-led artistry.</p></motion.div>
           <div className="service-menu">
-            {serviceGroups.map((group) => <section className="service-group" key={group.title}><h3>{group.title}</h3><div className="service-list">{group.items.map((service) => <article className="service-row" key={`${group.title}-${service.name}`}><div><h4>{service.name}</h4><p>{service.note}</p></div><div className="service-meta"><strong>{service.price}</strong>{service.time && <span>{service.time}</span>}</div></article>)}</div></section>)}
+            {serviceGroups.map((group) => <section className="service-group" key={group.title}><h3>{group.title}</h3><div className="service-list">{group.items.map((service) => <article className="service-row" key={`${group.title}-${service.name}`}><div><h4>{service.name}</h4>{service.note && <p>{service.note}</p>}</div><div className="service-meta"><strong>{service.price}</strong>{service.time && <span>{service.time}</span>}</div></article>)}</div></section>)}
           </div>
           <p className="price-note">Please allow extra time for removal, detailed nail art and additional length.</p>
         </section>
