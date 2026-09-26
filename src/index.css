@@ -137,7 +137,7 @@ footer a:not(.footer-brand) { display:inline-flex; align-items:center; gap:.4rem
   .about-copy { columns:1; }
   .about-copy p+p { margin-top:1.2rem; }
   .interior-frame img { height:470px; }
-  .detail-frame { width:68%; margin:-7rem 0 0 auto; }
+  .detail-frame { width:68%; margin:0 0 0 auto; }
   .detail-frame img { height:330px; }
   .services-title { margin-bottom:4rem; }
   .service-row { grid-template-columns:1fr auto; gap:.8rem; }
