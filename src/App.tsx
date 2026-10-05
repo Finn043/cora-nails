@@ -147,7 +147,7 @@ function App() {
           <motion.div className="contact-actions" {...reveal}>
             <a className="address-card" href={mapsUrl} target="_blank" rel="noreferrer"><MapPin /><span>919 Point Nepean Road<br />Rosebud, VIC</span><ArrowUpRight /></a>
             <a className="contact-row" href="tel:+61423401409"><Phone /><span>0423 401 409</span><ArrowUpRight /></a>
-            <a className="contact-row" href="mailto:anhpham1611@icloud.com"><Mail /><span>anhpham1611@icloud.com</span><ArrowUpRight /></a>
+            <a className="contact-row" href="mailto:lethilan14071996@gmail.com"><Mail /><span>lethilan14071996@gmail.com</span><ArrowUpRight /></a>
           </motion.div>
         </section>
       </main>
